@@ -1,0 +1,142 @@
+.home{
+  position: relative;
+  height:100vh;
+
+  .logo{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    width:100%;
+    z-index:2;
+    color:#fff;
+    padding:20px;
+
+    strong{
+      font-size:42px;
+      font-weight:800;
+      line-height: 1;
+    }
+    span{
+      font-size:14px;
+    }
+  }
+
+  .inner{
+    display:flex;
+    height:100%;
+
+    .left-bg{
+      flex:1;
+      height:100%;
+      background:rgba(0,0,0,.8)
+    }
+    .right-bg{
+      flex:1;
+      height:100%;
+      background:rgba(0,0,0,.8)
+    }
+
+    .centerWrap{
+      display:flex;
+      flex-direction: column;
+      width:280px;
+      padding:0px;
+      margin:0px;
+
+      .centerBox{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height:280px;
+
+        .crossLine{
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          .line{
+            position: absolute;
+            background:#00FFCB;
+          }
+          .line-1{
+            width:40px;          
+            height:2px;
+          }
+          .line-2{
+            height:40px;
+            width:2px;
+          }
+        }
+        
+        .box-1{
+          top:0;
+          left:0;
+          border-top:10px solid;
+          border-left:10px solid;
+        }
+        .box-2{
+          top:0;
+          right:0;
+          border-top:10px solid;
+          border-right:10px solid;
+        }
+        .box-3{
+          bottom:0;
+          left:0;
+          border-bottom:10px solid;
+          border-left:10px solid;
+        }
+        .box-4{
+          bottom:0;
+          right:0;
+          border-bottom:10px solid ;
+          border-right:10px solid ;
+        }
+        .box{
+          position: absolute;
+          width:30px;
+          height:30px;
+          border-color:#00FFCB;
+        }
+      }
+
+      .top-bg{
+        position: relative;
+        flex:1;
+        background:rgba(0,0,0,.8);
+        p{
+          width:100%;
+          position: absolute;
+          bottom:0;
+          color:#fff;
+          text-align: center;
+          padding:10px;
+          background-color: #000;
+          border-radius:10px;
+          margin-bottom:30px;
+          font-size:14px;
+
+          b{
+            color:#00FFCB;
+          }
+        }
+      }
+
+      .bottom-bg{
+        flex:1;
+        background: rgba(0,0,0,.8);
+      }
+    }
+  }
+
+  .guide{
+    position: absolute;
+    width:100%;
+    bottom:0px;
+    padding:20px;
+    text-align: right;
+    color:#fff;
+    font-size:14px;
+  }
+}

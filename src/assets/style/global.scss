@@ -1,0 +1,32 @@
+html{
+  font-family:'Roboto','NotoSansKR';
+  color:#292929;
+  letter-spacing: -.4px;
+
+  .v-dialog{
+    box-shadow: unset;
+  }
+
+  .v-btn{
+    letter-spacing: 0;
+  }
+}
+
+.page-title{
+  margin:20px 0;
+  h2{
+    font-size:20px;
+    line-height:1;
+    
+
+    b{
+      color:#0077FF;
+    }
+  }
+  p{
+    font-size:14px;
+    margin-top:5px;
+
+    color:#898989;
+  }
+}

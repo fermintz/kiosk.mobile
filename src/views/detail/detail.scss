@@ -1,0 +1,266 @@
+.page_top{
+  padding-bottom:30px;
+  h2{
+    font-size:20px;
+
+    b{
+      font-weight:bold;
+      color:#0077FF;
+    }
+  }
+  p{
+    margin:0;
+    color:#898989;
+  }
+}
+
+.contents{
+  dl{
+    dt{
+      display:flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom:10px;
+      h4{
+        font-weight:bold;
+      }
+    }
+    dd{
+      font-size:14px;
+      border-radius:5px;
+    }
+  }
+
+  .divider{
+    margin:36px 0;
+    height:1px;
+    background:#e2e2e2;
+  }
+
+  .userInfo{
+    margin-bottom:30px;
+
+    dt{}
+
+    dd{
+      display:flex;
+      align-items: center;
+      padding:0 15px;
+      font-size:16px;
+      background:#f2f2f2;
+      height:50px;
+      border-radius:10px;
+    }
+  }
+
+  .selected_goods{
+    dd{
+      display:flex;
+      justify-content: space-between;
+      border:1px solid #e2e2e2;
+      padding:14px;
+      border-radius:10px;
+
+      .left{
+        strong{
+          display:block;
+          font-size:18px;
+          font-weight:bold;
+          color:#0077FF;
+        }
+        span{
+          display:block;
+          font-size:14px;
+          color:#898989;
+        }
+      }
+      .right{
+        align-self: flex-end;
+        font-weight:800;
+        font-size:20px;
+        &:after{
+          content:'원';
+          font-size:14px;
+          font-weight:normal;
+        }
+      }
+    }
+  }
+
+  .point{
+    dt{
+      .v-btn{
+        border:1px solid #0077FF;
+        color:#0077FF;
+        max-height:26px;
+        padding:0 5px;
+        font-size:12px;
+      }
+    }
+
+    .myPoint{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      background:#EDF1F6;
+      height:50px;
+      padding:0 14px;
+      border-radius:10px;
+      
+      span{
+        font-size:14px;
+      }
+      strong{
+        color:#0077FF;
+        font-size:18px;
+        font-weight:800;
+      }
+    }
+
+    .pointUse{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top:10px;
+      border-radius:10px;
+      
+      input{
+        height:50px;
+        border-radius:10px;
+        padding:0 14px;
+        border:1px solid #292929;
+        flex:1;
+        outline: none;
+
+        &:focus{
+          border-color:#0077FF
+        }
+      }
+
+      .v-btn{
+        padding:0 20px;
+        margin-left:10px;
+        font-size:14px;
+        border-radius:10px;
+        height:50px;
+        color:#fff;
+        background:#292929;
+      }
+    }
+  }
+
+  .credit{
+    dd{
+      border:1px solid #e2e2e2;
+      border-radius:10px;
+      .item{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+          font-size:14px;
+        }
+      }
+
+      .items{
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        padding:14px;
+      }
+
+      .total{
+        border-bottom:1px solid #e2e2e2;
+        height:50px;
+        padding:0 14px;
+        strong{
+          font-size:20px;
+          font-weight:800;
+          color:#d22828;
+          &::after{
+            content:'원';
+            font-size:14px;
+            font-weight:normal;
+            margin-left:5px;
+          }
+        }
+      }
+
+      .add{
+        strong{
+          color:#0077FF;
+          font-weight:600;
+        }
+      }
+
+    }
+  }
+
+  .agree{
+
+    ul{
+      display:flex;
+      flex-direction: column;
+      padding:0;
+      margin-bottom:10px;
+      border:1px solid #e2e2e2;
+      gap:10px;
+      padding:14px;
+      border-radius:10px;
+
+      li{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span{
+          flex:1;
+          font-size:14px;
+          color:#898989;
+        }
+        .v-icon{
+          font-size:18px;
+          color:#898989;
+        }
+      }
+    }
+
+    .checkItem{
+      display:flex;
+      background:#f8f8f8;
+      border-radius:10px;
+      padding:14px;
+
+      &.active{
+        .v-icon{
+          color:#0077FF;
+        }
+      }
+
+      .v-icon{
+        font-size:24px;
+        color:#c2c2c2;
+        margin-right:10px;
+      }
+      span{
+        flex:1;
+        font-size:14px;
+      }
+    }
+  }
+
+  .btns{
+    margin-top:20px;
+    .v-btn{
+      height:50px;
+      border-radius:10px;
+      background:#c2c2c2;
+      width:100%;
+      color:#fff;
+    }
+
+    .v-btn.active{
+      background:#0077FF;
+    }
+  }
+}
