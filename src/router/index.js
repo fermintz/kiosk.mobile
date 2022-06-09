@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path:'*',
+    name:'notFound',
+    component: ()=>import('../views/notFound.vue'),
+  },
+  {
     path: '/',
     name: 'home',
     component: ()=>import('../views/home/home.vue'),
@@ -40,6 +45,7 @@ const routes = [
     name:'mypage',
     component: ()=>import('../views/mypage/mypage.vue'),
   },
+  
 ]
 
 const router = new VueRouter({

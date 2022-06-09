@@ -40,7 +40,7 @@
         </dd>
          <dd class="pointUse">
           <input type="tel" value="0">
-          <v-btn text>전액사용</v-btn>
+          <v-btn text @click="$refs.errorModal.handle(true)">전액사용</v-btn>
         </dd>
       </dl>
 
@@ -95,11 +95,20 @@
         <v-btn text :class="{active:checkOn}">결제하기</v-btn>
       </div>
     </div>
+
+    <Progress />
+    <ErrorModal ref="errorModal"/>
   </div>
 </template>
 
 <script>
+import Progress from '@/components/progress.vue'
+import ErrorModal from '@/components/errorModal.vue'
+
 export default {
+  components:{
+    Progress,ErrorModal
+  },
   data(){
     return{
       checkOn:false,
