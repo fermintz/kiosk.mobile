@@ -41,7 +41,7 @@
 
     <div class="guide">
       <div class="image">
-        <img src="https://picsum.photos/500/500">
+        <img src="@/assets/img/last.png">
       </div>
       <p>
         <b>A01세탁기</b>의 시작버튼을 눌러 사용해주세요

@@ -4,7 +4,7 @@
   >
     <div class="modal">
       <div class="image">
-        <img src="https://picsum.photos/600/300">
+        <img src="@/assets/img/first.png">
       </div>
       <dl>
         <dt>사용전 주의사항</dt>
@@ -21,7 +21,7 @@
 export default {
   data(){
     return{
-      visible:false,
+      visible:true,
     }
   },
   methods:{
