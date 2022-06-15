@@ -4,14 +4,21 @@
     :class="{active:visible}"
   >
     <div class="login">
-      <div class="sheet_top" v-for="(item, index) in headText" :key="index" v-show="show === index">
-        <div class="left">
-          <h3>{{item.title}}</h3>
-          <p>{{item.sub}}</p>
+      <div class="head" v-for="(item, index) in headText" :key="index" v-show="show === index">
+        <div class="top">
+          <div class="logo">
+            <img src="@/assets/img/logo_b_eng.png">
+          </div>
+          <v-btn icon @click="visible = false">
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
         </div>
-        <v-btn icon @click="visible = false">
-          <v-icon>mdi-close</v-icon>
-        </v-btn>
+  
+        <h3>
+          {{item.title}}
+        </h3>
+        <p>{{item.sub}}</p>
+      
       </div>
       <!-- <div class="divider"/> -->
       <div class="form user_check" v-show="show === 0">
@@ -183,30 +190,43 @@ export default {
   animation:sheetOut .5s ease forwards;
 
 
-  .sheet_top{
-    display:flex;
+  .head{
+   
     margin-bottom:30px;
     gap:40px;
-    justify-content: space-between;
+    
 
-    .left{
-      h3{
-      font-size:18px;
-      font-weight:bold;
-      }
-      p{
-        font-size:14px;
-        margin:0;
-        margin-top:3px;
-        color:#898989;
+    .top{
+       display:flex;
+       justify-content: space-between;
+       margin-bottom:20px;
+      .logo{
+          margin-bottom:20px;
+          img{
+            display:block;
+            height:40px;
+          }
+        }
+      .v-btn{
+        width:45px;
+        height:45px;
+        background:#f2f2f2;
       }
     }
 
-    .v-btn{
-      width:45px;
-      height:45px;
-      background:#f2f2f2;
+    h3{
+        
+    font-size:18px;
+    font-weight:bold;
     }
+    p{
+      font-size:14px;
+      margin:0;
+      margin-top:3px;
+      color:#898989;
+    }
+
+    
     
   }
 

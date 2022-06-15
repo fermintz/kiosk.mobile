@@ -44,6 +44,7 @@ export default {
       height:200px;
       border-radius:10px;
       object-fit: cover;
+      border:1px solid #e2e2e2;
     }
   }
 

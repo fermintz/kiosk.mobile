@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <div class="logo">
-      <strong>POIN</strong>
-      <span>편리한 무인장비 결제시스템</span>
+      <img src="@/assets/img/logo_w_eng.png">
     </div>
     <div class="inner">
       <div class="left-bg"></div>
