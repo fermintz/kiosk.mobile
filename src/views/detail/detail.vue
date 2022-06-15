@@ -76,7 +76,7 @@
 
       <div class="agree">
         <ul>
-          <li>
+          <li @click="$refs.agree.handle(true)">
             <span>개인정보 판매자 제공에 대한 동의</span>
             <v-icon>mdi-chevron-right</v-icon>
           </li>
@@ -98,20 +98,23 @@
 
     <Progress />
     <ErrorModal ref="errorModal"/>
+    <Agree ref="agree" />
   </div>
 </template>
 
 <script>
 import Progress from '@/components/progress.vue'
 import ErrorModal from '@/components/errorModal.vue'
+import Agree from '@/components/agree.vue'
 
 export default {
   components:{
-    Progress,ErrorModal
+    Progress,ErrorModal,Agree
   },
   data(){
     return{
       checkOn:false,
+
     }
   },
   methods:{
