@@ -8,24 +8,25 @@
       <span>내 포인트</span>
       <strong>5,000P</strong>
     </div>
-    <form>
-      <h4>충전금액 직접입력<b>*</b></h4>
-      <input type="number" placeholder="0" v-model="inputPrice">
-      <div class="priceBtns">
-        <v-btn text @click="inputPrice += 10000">+10,000원</v-btn>
-        <v-btn text @click="inputPrice += 5000">+5,000원</v-btn>
-        <v-btn text @click="inputPrice += 1000">+1,000원</v-btn>
-        <v-btn text @click="inputPrice = 0">초기화</v-btn>
-      </div>
-      <dl>
-        <dt>충전보너스 포인트</dt>
-        <dd>
-          <span>+400P</span>
-        </dd>
-      </dl>
-    </form>
-    <div class="bottom">
-      <v-btn text>다음</v-btn>
+    
+    <div class="item-list">
+      <h4>충전금액 선택</h4>
+      <v-row>
+        <v-col cols="6" v-for="item in 10" :key="item">
+          <div class="item" v-ripple>
+            <div class="top">
+              <span>10,000 포인트충전</span>
+              <strong>10,000원</strong>
+            </div>
+            
+            <div class="bonus">
+              <label>보너스적립</label>
+              <span>+500P</span>
+            </div>
+            
+          </div>
+        </v-col>
+      </v-row>
     </div>
     
   </div>
