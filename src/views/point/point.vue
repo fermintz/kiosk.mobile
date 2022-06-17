@@ -5,7 +5,11 @@
       <p>충전할 금액을 입력해주세요</p>
     </div>
     <div class="myPoint">
-      <span>내 포인트</span>
+      <div class="user">
+        <span>내 포인트</span>
+        <p>010-8525-4561</p>
+      </div>
+      
       <strong>5,000P</strong>
     </div>
     

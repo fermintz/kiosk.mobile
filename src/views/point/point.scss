@@ -7,10 +7,16 @@
     padding:15px;
     border:1px solid #d2d2d2;
     border-radius:10px;
-
-    span{
-      font-size:14px;
+    .user{
+      span{
+        font-size:14px;
+      }
+      p{
+        margin:0;
+        font-weight:bold;
+      }
     }
+    
     strong{
 
       font-size:24px;
