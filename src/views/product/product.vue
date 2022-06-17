@@ -23,14 +23,24 @@
         <div class="items-top">
           <strong>상품<b>5</b>개</strong>
         </div>
-        <GoodsItem v-for="item in 5" :key="item"  />
+        <GoodsItem v-for="item in 5" :key="item" />
       </div>
     </div>
+
     <div class="cont" v-show="tab === 1">
       <form>
         <span>투입금액 입력<b>*</b></span>
-        <input type="number" placeholder="5000" v-model="inputPrice" maxlength="5">
-        <v-btn text :class="{active:buttonActive}">다음으로</v-btn>
+        <input type="number" placeholder="0" v-model="inputPrice" maxlength="5">
+        <div class="priceBtns">
+          <v-btn text @click="inputPrice += 10000">+10,000원</v-btn>
+          <v-btn text @click="inputPrice += 5000">+5,000원</v-btn>
+          <v-btn text @click="inputPrice += 1000">+1,000원</v-btn>
+          <v-btn text @click="inputPrice = 0">초기화</v-btn>
+        </div>
+        <div class="bottom">
+           <v-btn text :class="{active:buttonActive}">다음으로</v-btn>
+        </div>
+       
       </form>
     </div>
 
@@ -61,8 +71,7 @@ export default {
 
   watch:{
     inputPrice(val){
-      console.log(val)
-      if(val.length >= 3){
+      if(val.length > 3){
         this.buttonActive = true;
       }else{
         this.buttonActive = false;
