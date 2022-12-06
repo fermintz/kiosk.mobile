@@ -7,7 +7,7 @@
     <div class="myPoint">
       <div class="user">
         <span>내 포인트</span>
-        <p>010-8525-4561</p>
+        <!-- <p>010-8525-4561</p> -->
       </div>
       
       <strong>5,000P</strong>

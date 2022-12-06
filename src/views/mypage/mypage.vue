@@ -35,6 +35,23 @@
         </div>
 
         <div class="divider"></div>
+        
+        <div class="banner">
+          <dl  v-ripple>
+            <dt>
+              <img src="@/assets/img/laundry.png">
+            </dt>
+            <dd>
+              <div class="text">
+                <strong>장비이용하기</strong>
+                <span>매장의 장비와 상품을 이용할 수 있습니다.</span>
+              </div>
+              <v-icon>mdi-chevron-right</v-icon>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="divider"></div>
 
         <div class="use-list">
           <div class="list-head">
