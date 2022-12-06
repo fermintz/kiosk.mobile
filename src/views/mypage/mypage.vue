@@ -59,6 +59,9 @@
           </div>
 
           <div class="list">
+            <div class="no-data">
+              이용하신 내역이 없습니다.
+            </div>
             <div class="use-item">
               <div class="item-top">
                 <label class="chage">포인트충전</label>

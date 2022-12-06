@@ -161,6 +161,14 @@
 }
 
 .use-list{
+  .no-data{
+    background:#f5f5f7;
+    padding:15px;
+    border-radius:10px;
+    font-size:14px;
+    color:#797979;
+  }
+
   .list-head{
     display:flex;
     align-items: center;
